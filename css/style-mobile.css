@@ -1,5 +1,6 @@
 @media screen and (max-width: 500px){
  .name {
- 	font-size: 5em;
+ 	font-size: 6em;
+ 	text-align: center;
  }
 }
