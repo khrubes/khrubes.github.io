@@ -2,12 +2,16 @@ body, html, .main {
 	height: 100%;
 }
 
+.left-nav {
+	background-color: #DBE4EB;
+	height: 100vh;
+}
+
 .name {
   font-family: 'Montserrat Alternates', sans-serif;
-  font-size: 10em;	
+  font-size: 9em;	
   line-height: .8;
   position: relative;
-  right: 20%;
   text-align: right;
   text-shadow: .07em .07em #DBE4EB;
   top: 20%;
