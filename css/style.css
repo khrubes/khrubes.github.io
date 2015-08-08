@@ -5,14 +5,22 @@ body, html, .main {
 .left-nav {
 	background-color: #DBE4EB;
 	height: 100vh;
+	padding: 0 !important;
 }
 
+a.collection-item {
+	background-color: #DBE4EB !important;
+}
+
+a.collection-item:hover{
+	background-color: #CED6DD !important;
+}
 .name {
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: 9em;	
   line-height: .8;
   position: relative;
-  text-align: right;
+  text-align: center;
   text-shadow: .07em .07em #DBE4EB;
   top: 20%;
 }
@@ -22,7 +30,7 @@ body, html, .main {
 }
 
 .last-name {
-	font-size: .98em;
+	font-size: .9em;
 }
 
 .main-content {
