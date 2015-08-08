@@ -1,11 +1,13 @@
 body, html, .main {
+	cursor: pointer;
 	height: 100%;
+	margin-bottom: 0;
 }
 
 .left-nav {
 	background-color: #DBE4EB;
 	height: 100vh;
-	padding: 0 !important;
+	padding-top: 5% !important;
 }
 
 a.collection-item {
