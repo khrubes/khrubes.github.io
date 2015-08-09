@@ -1,23 +1,27 @@
-body, html, .main {
+body, html {
+	color: white;
 	cursor: pointer;
 	font-family: Helvetica, sans-serif;
+	margin-bottom: 0 !important;
 	height: 100%;
-	margin-bottom: 0;
+	text-align: center;
 }
 
-.left-nav {
-	background-color: #DBE4EB;
+.main-wrapper {
 	height: 100vh;
-	padding-top: 5% !important;
 }
 
-a.collection-item {
-	background-color: #DBE4EB !important;
+.thingIAmText {
+	display: block;
+	font-size: 200%;
 }
 
-a.collection-item:hover{
-	background-color: #CED6DD !important;
+.hey {
+	margin: 0 0 10% 5%;
+	font-size: 2em;
+	text-align: left;
 }
+
 .name {
 	background: url(../img/background.jpg);
 	background-repeat:repeat-x;
@@ -28,11 +32,10 @@ a.collection-item:hover{
 	-moz-background-clip:text;
 	background-clip:text;
 	font-size: 9em;	
+	font-weight: 700;
 	line-height: .8;
 	-webkit-text-fill-color:transparent;
 	margin:0;
-	position: relative;
-	text-align: center;
 	top: 20%;
 	-webkit-animation:BackgroundAnimated 15s linear infinite;
 	-moz-animation:BackgroundAnimated 15s linear infinite;
@@ -49,14 +52,19 @@ a.collection-item:hover{
 	font-size: .9em;
 }
 
-.main-content {
-	padding: 0 !important;
+.main {
+	background-color: rgba(0, 0, 0, 0.870588);
+	height: 90vh;
 }
 
-.name-section{
-	height: 100vh;
+div.navBar {
+    background-color: #efeff1;
+   	height: 10vh;    
 }
 
+.row {
+	margin-bottom: 0px;
+}
 
 @keyframes BackgroundAnimated {
     from {
