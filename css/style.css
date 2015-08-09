@@ -1,5 +1,6 @@
 body, html, .main {
 	cursor: pointer;
+	font-family: Helvetica, sans-serif;
 	height: 100%;
 	margin-bottom: 0;
 }
@@ -18,13 +19,26 @@ a.collection-item:hover{
 	background-color: #CED6DD !important;
 }
 .name {
-  font-family: Helvetica, sans-serif;
-  font-size: 9em;	
-  line-height: .8;
-  position: relative;
-  text-align: center;
-  text-shadow: .02em .02em .01em #DBE4EB;
-  top: 20%;
+	background: url(../img/background.jpg);
+	background-repeat:repeat-x;
+	background-position:0 0;
+	color:transparent;
+	-webkit-font-smoothing:antialiased;
+	-webkit-background-clip:text;
+	-moz-background-clip:text;
+	background-clip:text;
+	font-size: 9em;	
+	line-height: .8;
+	-webkit-text-fill-color:transparent;
+	margin:0;
+	position: relative;
+	text-align: center;
+	top: 20%;
+	-webkit-animation:BackgroundAnimated 15s linear infinite;
+	-moz-animation:BackgroundAnimated 15s linear infinite;
+	-ms-animation:BackgroundAnimated 15s linear infinite;
+	-o-animation:BackgroundAnimated 15s linear infinite;
+    animation:BackgroundAnimated 15s linear infinite;
 }
 
 .first-name {
@@ -36,20 +50,42 @@ a.collection-item:hover{
 }
 
 .main-content {
-	background: url(../img/background.jpg);
-	background-position: no-repeat center center;
+	padding: 0 !important;
+}
 
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	background-repeat: no-repeat;
+.name-section{
 	height: 100vh;
+}
 
+
+@keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-webkit-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-ms-keyframes BackgroundAnimated {<     from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-moz-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
 }
