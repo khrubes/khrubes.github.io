@@ -1,5 +1,108 @@
+$default-font-family: 'Arimo', sans-serif;
+$special-font-family: 'Pacifico', cursive;
+
+body {	
+	color: white;
+	cursor: pointer;
+	display: block !important;
+	font-family: $default-font-family;
+	margin-bottom: 0 !important;
+	height: 100%;
+	text-align: center;
+}
+
 div.navBar {
+	background-color: #efeff1;
+   	height: 10vh;   
+
 	.col {
 		height: 100%;
 	}
+}
+
+.thingIAmText {
+	display: block;
+	font-size: 200%;
+}
+
+.name {
+	background: url(../img/background.jpg);
+	background-repeat:repeat-x;
+	background-position:0 0;
+	color:transparent;
+	-webkit-font-smoothing:antialiased;
+	-webkit-background-clip:text;
+	-moz-background-clip:text;
+	background-clip:text;
+	font-family: $special-font-family;
+	font-size: 9em;	
+	font-weight: 700;
+	line-height: .8;
+	-webkit-text-fill-color:transparent;
+	margin:0;
+	padding: 5%;
+	top: 20%;
+	-webkit-animation:BackgroundAnimated 15s linear infinite;
+	-moz-animation:BackgroundAnimated 15s linear infinite;
+	-ms-animation:BackgroundAnimated 15s linear infinite;
+	-o-animation:BackgroundAnimated 15s linear infinite;
+    animation:BackgroundAnimated 15s linear infinite;
+}
+
+.first-name {
+	display: block;
+}
+
+.last-name {
+	font-size: .9em;
+}
+
+.main-wrapper {
+	height: 100vh;
+}
+
+.main {
+	background-color: rgba(0, 0, 0, 0.870588);
+	height: 90vh;
+	display: block !important;
+}
+
+.row {
+	margin-bottom: 0px;
+}
+
+@keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+
+@-webkit-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+
+@-ms-keyframes BackgroundAnimated {
+   	from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+
+@-moz-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
 }

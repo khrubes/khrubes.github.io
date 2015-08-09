@@ -1,5 +1,37 @@
 @media screen and (min-width: 1000px){
  .name {
- 	font-size: 12em;
+ 	font-size: 13em;
  }
+}
+
+@keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-webkit-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-ms-keyframes BackgroundAnimated {<     from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
+}
+    @-moz-keyframes BackgroundAnimated {
+    from {
+        background-position:0 0
+    }
+    to {
+        background-position:100% 0
+    }
 }
