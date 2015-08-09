@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 	if(!isMobile.any()){
-		$('.name').addClass('animated fadeIn');
 	}	
 });
 

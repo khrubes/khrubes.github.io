@@ -18,12 +18,12 @@ a.collection-item:hover{
 	background-color: #CED6DD !important;
 }
 .name {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 9em;	
   line-height: .8;
   position: relative;
   text-align: center;
-  text-shadow: .07em .07em #DBE4EB;
+  text-shadow: .02em .02em .01em #DBE4EB;
   top: 20%;
 }
 
