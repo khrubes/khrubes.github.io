@@ -1,6 +1,5 @@
 html, body {
   color: white;
-  cursor: pointer;
   display: block !important;
   font-family: "Arimo", sans-serif;
   margin-bottom: 0 !important;
@@ -10,12 +9,10 @@ html, body {
 div.navBar {
   background-color: #efeff1;
   width: 100%;
-  position: fixed;
-  bottom: 0;
   color: #BF1D52 !important; }
   div.navBar .fa {
     display: block !important;
-    font-size: 3em;
+    font-size: 2em;
     padding-top: 5%; }
   div.navBar .col:hover {
     background-color: #CBCBCB !important; }
@@ -52,12 +49,14 @@ div.navBar {
 .last-name {
   font-size: .9em; }
 
-.main-wrapper {
-  height: 100vh; }
+.titleUnderName {
+  display: block; }
+
+.main-wrapper .emphasize {
+  color: #DA044C !important; }
 
 .main {
   background-color: rgba(0, 0, 0, 0.87059);
-  height: 90vh;
   display: block !important; }
 
 .row {
