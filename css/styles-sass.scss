@@ -1,7 +1,9 @@
 $default-font-family: 'Arimo', sans-serif;
 $special-font-family: 'Pacifico', cursive;
+$primary-color: #BF1D52 !important;
+$dark-gray: #CBCBCB !important;
 
-body {	
+html, body {	
 	color: white;
 	cursor: pointer;
 	display: block !important;
@@ -13,16 +15,24 @@ body {
 
 div.navBar {
 	background-color: #efeff1;
-   	height: 10vh;   
+	width: 100%;
+ 	position: fixed;
+ 	bottom: 0;  
+   	color: $primary-color;
 
-	.col {
-		height: 100%;
+   	.fa {
+   		display: block !important;
+   		font-size: 3em;   		
+   		padding-top: 5%;
+   	}
+
+	.col:hover{
+		background-color: $dark-gray;
 	}
 }
 
-.thingIAmText {
-	display: block;
-	font-size: 200%;
+.more {
+	height: 1000px;
 }
 
 .name {

@@ -1,4 +1,4 @@
-body {
+html, body {
   color: white;
   cursor: pointer;
   display: block !important;
@@ -9,13 +9,19 @@ body {
 
 div.navBar {
   background-color: #efeff1;
-  height: 10vh; }
-  div.navBar .col {
-    height: 100%; }
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #BF1D52 !important; }
+  div.navBar .fa {
+    display: block !important;
+    font-size: 3em;
+    padding-top: 5%; }
+  div.navBar .col:hover {
+    background-color: #CBCBCB !important; }
 
-.thingIAmText {
-  display: block;
-  font-size: 200%; }
+.more {
+  height: 1000px; }
 
 .name {
   background: url(../img/background.jpg);
