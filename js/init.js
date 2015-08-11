@@ -1,37 +1,9 @@
-// var animateName = function() {
-//     var name = $( ".name" );
-//     name.fadeIn(2000);
-// };
+/** Once the DOM is ready. */
+$( document ).ready(function(){
+    $(".button-collapse").sideNav();
+});
 
-// var thingsIAm = [
-// "web developer",
-// "computer science student",
-// "hackathon organizer",
-// "coffee snob",
-// ];
-
-// var thingsIndex = 0;
-
-// var animateThingsIAm = function () {
-//     thingsIndex = getThingsIndex();
-//     var text = $( ".thingIAmText" );
-//     text.fadeIn(1000, function(){
-//         text.fadeOut(1000, function(){
-//             text.html( thingsIAm[thingsIndex++] );
-//             animateThingsIAm();
-//         });
-//     });   
-// };
-
-// var getThingsIndex = function(){
-//     if(thingsIndex >= thingsIAm.length) {
-//         thingsIndex = 0;
-//     }
-//     return thingsIndex;
-// }
-
-
-// $( document ).ready(function() {
-//     animateName();
-//     animateThingsIAm();
-// });
+/** Once everything, including images, is ready */
+$( window ).load(function() {
+    $(".splash-text").fadeIn(3000);
+});

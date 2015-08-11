@@ -1,122 +1,81 @@
-$default-font-family: 'Arimo', sans-serif;
-$special-font-family: 'Pacifico', cursive;
 $primary-color: #BF1D52 !important;
 $primary-color-light: #DA044C !important;
-$dark-gray: #CBCBCB !important;
+$serif-font: 'Playfair Display', serif;
 
-html, body {	
-	color: white;
-	display: block !important;
-	font-family: $default-font-family;
-	margin-bottom: 0 !important;
+body {	
 	height: 100%;
 	text-align: center;
 }
 
-div.navBar {
-	background-color: #efeff1;
-	width: 100%;
-   	color: $primary-color;
-
-   	.fa {
-   		display: block !important;
-   		font-size: 2em;   		
-   		padding-top: 5%;
-   	}
-
-	.col:hover{
-		background-color: $dark-gray;
-	}
+.serif-title {
+	font-family: $serif-font;
 }
 
-.more {
-	height: 1000px;
-}
-
-.name {
-	background: url(../img/background.jpg);
-	background-repeat:repeat-x;
-	background-position:0 0;
-	color:transparent;
-	-webkit-font-smoothing:antialiased;
-	-webkit-background-clip:text;
-	-moz-background-clip:text;
-	background-clip:text;
-	font-family: $special-font-family;
-	font-size: 9em;	
-	font-weight: 700;
-	line-height: .8;
-	-webkit-text-fill-color:transparent;
-	margin:0;
-	padding: 5%;
-	top: 20%;
-	-webkit-animation:BackgroundAnimated 15s linear infinite;
-	-moz-animation:BackgroundAnimated 15s linear infinite;
-	-ms-animation:BackgroundAnimated 15s linear infinite;
-	-o-animation:BackgroundAnimated 15s linear infinite;
-    animation:BackgroundAnimated 15s linear infinite;
-}
-
-.first-name {
+.subtitle {
 	display: block;
 }
 
-.last-name {
-	font-size: .9em;
+.splash {
+	background: url(../img/background-large.jpg);
+	background-position: no-repeat center center;
+
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	background-repeat: no-repeat;
+	height: 100vh;	
+	.splash-text {
+		display: none; /* for fadeIn animation */
+		.splash-name {
+			white-space: nowrap;
+		}
+	}
+
 }
 
-.titleUnderName {
-	display: block;
-}
-
-.main-wrapper {
-
-	.emphasize {
-		color: $primary-color-light
+@media screen and (min-width: 993px){
+	.serif-title {
+		font-size: 5em;
+	}
+	.splash-name {
+		font-size: 7em;
+	}
+	.splash-description {
+		font-size: 2em;
+	}
+	nav{
+		.brand-logo {
+			float: left;
+			position: relative !important;
+		}
 	}
 }
 
-.main {
-	background-color: rgba(0, 0, 0, 0.870588);
-	display: block !important;
-}
+@media screen and (max-width: 992px){
+	.serif-title {
+		font-size: 4em;
+	}
+	.splash-name {
+		font-size: 5em;
+	}
+	.subtitle{
+		font-size: 1em;
+	}
+} 
 
-.row {
-	margin-bottom: 0px;
+ @media screen and (max-width: 600px){
+ 	.serif-title {
+		font-size: 3em;
+	}
+	.splash-text {
+		padding: 5%;
+	}
 }
-
-@keyframes BackgroundAnimated {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-
-@-webkit-keyframes BackgroundAnimated {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-
-@-ms-keyframes BackgroundAnimated {
-   	from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
-
-@-moz-keyframes BackgroundAnimated {
-    from {
-        background-position:0 0
-    }
-    to {
-        background-position:100% 0
-    }
-}
+  

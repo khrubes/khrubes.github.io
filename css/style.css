@@ -1,86 +1,59 @@
-html, body {
-  color: white;
-  display: block !important;
-  font-family: "Arimo", sans-serif;
-  margin-bottom: 0 !important;
+body {
   height: 100%;
   text-align: center; }
 
-div.navBar {
-  background-color: #efeff1;
-  width: 100%;
-  color: #BF1D52 !important; }
-  div.navBar .fa {
-    display: block !important;
-    font-size: 2em;
-    padding-top: 5%; }
-  div.navBar .col:hover {
-    background-color: #CBCBCB !important; }
+.serif-title {
+  font-family: "Playfair Display", serif; }
 
-.more {
-  height: 1000px; }
-
-.name {
-  background: url(../img/background.jpg);
-  background-repeat: repeat-x;
-  background-position: 0 0;
-  color: transparent;
-  -webkit-font-smoothing: antialiased;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  font-family: "Pacifico", cursive;
-  font-size: 9em;
-  font-weight: 700;
-  line-height: .8;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
-  padding: 5%;
-  top: 20%;
-  -webkit-animation: BackgroundAnimated 15s linear infinite;
-  -moz-animation: BackgroundAnimated 15s linear infinite;
-  -ms-animation: BackgroundAnimated 15s linear infinite;
-  -o-animation: BackgroundAnimated 15s linear infinite;
-  animation: BackgroundAnimated 15s linear infinite; }
-
-.first-name {
+.subtitle {
   display: block; }
 
-.last-name {
-  font-size: .9em; }
+.splash {
+  background: url(../img/background-large.jpg);
+  background-position: no-repeat center center;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  .splash .splash-text {
+    display: none;
+    /* for fadeIn animation */ }
+    .splash .splash-text .splash-name {
+      white-space: nowrap; }
 
-.titleUnderName {
-  display: block; }
+@media screen and (min-width: 993px) {
+  .serif-title {
+    font-size: 5em; }
 
-.main-wrapper .emphasize {
-  color: #DA044C !important; }
+  .splash-name {
+    font-size: 7em; }
 
-.main {
-  background-color: rgba(0, 0, 0, 0.87059);
-  display: block !important; }
+  .splash-description {
+    font-size: 2em; }
 
-.row {
-  margin-bottom: 0px; }
+  nav .brand-logo {
+    float: left;
+    position: relative !important; } }
+@media screen and (max-width: 992px) {
+  .serif-title {
+    font-size: 4em; }
 
-@keyframes BackgroundAnimated {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-@-webkit-keyframes BackgroundAnimated {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-@-ms-keyframes BackgroundAnimated {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
-@-moz-keyframes BackgroundAnimated {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: 100% 0; } }
+  .splash-name {
+    font-size: 5em; }
+
+  .subtitle {
+    font-size: 1em; } }
+@media screen and (max-width: 600px) {
+  .serif-title {
+    font-size: 3em; }
+
+  .splash-text {
+    padding: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
