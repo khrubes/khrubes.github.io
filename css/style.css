@@ -28,13 +28,19 @@ body {
   color: white;
   height: 100vh; }
   .splash .splash-text {
-    text-shadow: 1em .6em 1em black;
+    text-shadow: .2em .3em 1em black;
     display: none;
     /* for fadeIn animation */ }
     .splash .splash-text .splash-name {
       white-space: nowrap; }
-  .splash .splash-text::before {
-    text-shadow: -1em -.6em 1em black; }
+
+.square {
+  border-style: solid;
+  border-width: 4px;
+  display: inline-block;
+  height: auto;
+  margin-left: inherit;
+  max-width: 50%; }
 
 @media screen and (min-width: 993px) {
   .serif-title {
