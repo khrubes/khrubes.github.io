@@ -1,10 +1,17 @@
 $primary-color: #BF1D52 !important;
 $primary-color-light: #DA044C !important;
+$overlay-color: black;
+$text-color: black;
 $serif-font: 'Playfair Display', serif;
 
 body {	
+	color: $text-color;
 	height: 100%;
-	text-align: center;
+	text-align: center !important;
+}
+
+.navbar-fixed {
+	height: 0;
 }
 
 .serif-title {
@@ -17,8 +24,8 @@ body {
 
 .splash {
 	background: url(../img/background-large.jpg);
-	background-position: no-repeat center center;
-
+	background-repeat: no-repeat !important;
+	background-position: center top;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
@@ -30,12 +37,17 @@ body {
 	background-size: cover;
 
 	background-repeat: no-repeat;
-	height: 100vh;	
+	color: white;
+	height: 100vh;
 	.splash-text {
+		text-shadow: 1em .6em 1em black;
 		display: none; /* for fadeIn animation */
 		.splash-name {
 			white-space: nowrap;
 		}
+	}
+	.splash-text::before {
+		text-shadow: -1em -.6em 1em black;
 	}
 
 }
