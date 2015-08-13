@@ -5,5 +5,5 @@ $( document ).ready(function(){
 
 /** Once everything, including images, is ready */
 $( window ).load(function() {
-    $(".splash-text").fadeIn(2000);
+    $(".splash-text").fadeIn(1500);
 });
