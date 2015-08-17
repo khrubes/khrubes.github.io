@@ -10,6 +10,9 @@ h1, h2, h3, h4, h5, h6 {
 i {
   cursor: pointer; }
 
+ul.experience-ul li {
+  opacity: 0; }
+
 .card {
   margin: 0 !important; }
 
@@ -18,6 +21,9 @@ i {
 
 .navbar-fixed {
   height: 0; }
+
+.parallax {
+  z-index: 0; }
 
 .serif-title {
   font-family: "Playfair Display", serif; }
@@ -46,6 +52,9 @@ i {
     /* for fadeIn animation */ }
 
 .state-country-font {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: geoBats;
   padding: 2em; }
 
