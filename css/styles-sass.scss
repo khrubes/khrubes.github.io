@@ -2,17 +2,19 @@ $primary-color: #BF1D52 !important;
 $primary-color-light: #DA044C !important;
 $overlay-color: black;
 $text-color: black;
-$serif-font: 'Playfair Display', serif;
 
 body {	
 	color: $text-color;
 	height: 100%;
 	margin: 0 !important;
-	text-align: center !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
+}
+
+h2 {
+	text-align: center;
 }
 
 
@@ -26,10 +28,20 @@ ul.experience-ul {
 	}
 }
 
-.card {
-	margin: 0 !important;
+ul.responsibilities {
+	h5 {
+		margin-top: 1em;
+		margin-bottom: .5em;
+	}
+
+	li {
+		b {
+			display: block;
+		}
+	}
 }
 
+.card,
 .row {
 	margin: 0 !important;
 }
@@ -40,10 +52,6 @@ ul.experience-ul {
 
 .parallax {
     z-index: 0;
-}
-
-.serif-title {
-	font-family: $serif-font;
 }
 
 .subtitle {
@@ -81,6 +89,10 @@ ul.experience-ul {
 	padding: 2em;
 }
 
+.state-country-row {
+	padding-bottom: 1em;
+}
+
 @media screen and (min-width: 993px){
 	nav{
 		.brand-logo {
@@ -89,7 +101,7 @@ ul.experience-ul {
 		}
 	}
 	.state-country-font {
-		font-size: 3em;
+		font-size: 2em;
 	}
 }
 
@@ -102,6 +114,12 @@ ul.experience-ul {
 @media screen and (max-width: 600px){
 	.state-country-font {
 		font-size: 1em;
+	}
+
+	ul.experience-ul {
+		li {
+			opacity: 1;
+		}
 	}
 }
 

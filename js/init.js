@@ -1,9 +1,8 @@
  var isMobile = function() {
-    return window.innerWidth <= 720;
+    return (window.innerWidth <= 720);
 };
 
 var initScrollFire = function() {
-    debugger;
     var options = [
         {selector: '.experience-ul', offset: 100, callback: 'Materialize.showStaggeredList(".experience-ul")'},
     ];

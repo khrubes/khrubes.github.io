@@ -1,11 +1,13 @@
 body {
   color: black;
   height: 100%;
-  margin: 0 !important;
-  text-align: center !important; }
+  margin: 0 !important; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
+
+h2 {
+  text-align: center; }
 
 i {
   cursor: pointer; }
@@ -13,9 +15,13 @@ i {
 ul.experience-ul li {
   opacity: 0; }
 
-.card {
-  margin: 0 !important; }
+ul.responsibilities h5 {
+  margin-top: 1em;
+  margin-bottom: .5em; }
+ul.responsibilities li b {
+  display: block; }
 
+.card,
 .row {
   margin: 0 !important; }
 
@@ -24,9 +30,6 @@ ul.experience-ul li {
 
 .parallax {
   z-index: 0; }
-
-.serif-title {
-  font-family: "Playfair Display", serif; }
 
 .subtitle {
   display: block; }
@@ -58,19 +61,25 @@ ul.experience-ul li {
   font-family: geoBats;
   padding: 2em; }
 
+.state-country-row {
+  padding-bottom: 1em; }
+
 @media screen and (min-width: 993px) {
   nav .brand-logo {
     float: left;
     position: relative !important; }
 
   .state-country-font {
-    font-size: 3em; } }
+    font-size: 2em; } }
 @media screen and (max-width: 992px) {
   .state-country-font {
     font-size: 2em; } }
 @media screen and (max-width: 600px) {
   .state-country-font {
-    font-size: 1em; } }
+    font-size: 1em; }
+
+  ul.experience-ul li {
+    opacity: 1; } }
 @font-face {
   font-family: geoBats;
   src: url(../fonts/geobats.ttf); }
