@@ -2,13 +2,17 @@
     return (window.innerWidth <= 720);
 };
 
+var toggleInternHacksHoverText = function() {
+    $(".internhacks-parallax-text-wrapper").fadeIn(2000);
+};
+
 var initScrollFire = function() {
     var options = [
-        {selector: '.experience-ul', offset: 100, callback: 'Materialize.showStaggeredList(".experience-ul")'},
+        {selector: '.parallax', offset: 200, callback: 'toggleInternHacksHoverText()'},
+        {selector: '.experience-ul', offset: 200, callback: 'Materialize.showStaggeredList(".experience-ul")'},
     ];
     Materialize.scrollFire(options);
 };
-
 
 /** Once the DOM is ready. */
 $( document ).ready(function(){
@@ -27,4 +31,6 @@ $( window ).load(function() {
     $(".splash-text").fadeIn(1500);
     initScrollFire();
 });
+
+
 
