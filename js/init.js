@@ -6,13 +6,15 @@ var toggleInternHacksHoverText = function() {
     $(".internhacks-parallax-text-wrapper").fadeIn(2000);
 };
 
-var initScrollFire = function() {
-    var options = [
-        {selector: '.parallax', offset: 200, callback: 'toggleInternHacksHoverText()'},
-        {selector: '.experience-ul', offset: 200, callback: 'Materialize.showStaggeredList(".experience-ul")'},
-    ];
-    Materialize.scrollFire(options);
-};
+// var initScrollFire = function() {
+//     var options = [
+//         {selector: '.parallax', offset: 200, callback: 'toggleInternHacksHoverText()'},
+//         {selector: '.experience-ul', offset: 200, callback: 'Materialize.showStaggeredList(".experience-ul")'},
+//     ];
+//     Materialize.scrollFire(options);
+//     var scrollfireManager = new ScrollFireManager();
+//     scrollfireManager.renameULs();
+// };
 
 /** Once the DOM is ready. */
 $( document ).ready(function(){
@@ -29,7 +31,8 @@ $( document ).ready(function(){
 /** Once everything, including images, is ready */
 $( window ).load(function() {
     $(".splash-text").fadeIn(1500);
-    initScrollFire();
+    var scrollfireManager = new ScrollFireManager();
+    scrollfireManager.initScrollFire();
 });
 
 
