@@ -18,14 +18,12 @@
          <a class="brand-logo">Kelsey Hrubes</a>
          <a data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
          <ul class="right hide-on-med-and-down">
-           <li><a>Experience</a></li>
-           <li><a>Skills</a></li>
-           <li><a>Education</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#education">Education</a></li>
          </ul>
          <ul class="side-nav" id="mobile-demo">
-           <li><a>Experience</a></li>
-           <li><a>Skills</a></li>
-           <li><a>Education</a></li>
+           <li><a href="#experience">Experience</a></li>
+           <li><a href="#education">Education</a></li>
          </ul>
        </div>
      </nav>
@@ -34,7 +32,7 @@
    <div class="splash row valign-wrapper">
       <div class="col s2 l4"></div>
       <div class="splash-text col s8 l4 valign">
-              <div class="card hoverable teal center-align">
+              <div class="card name-card hoverable teal center-align">
                <h1 class="splash-name">Kelsey Hrubes</h1>
                <span class="email">{ kelseyhrubes@gmail.com }</span>
                 <h6 class="white-text">I am a Computer Science major at Iowa State University, who loves front end development, UI/UX design, and coffee.</h6>
@@ -70,27 +68,27 @@
     </div>
 
       <div class="parallax-container">
-        <div class="parallax parallax-internhacks">
-          <div class="internhacks-parallax-text-wrapper center-align valign-wrapper">
-            <div class="internhacks-parallax-text valign">            
+        <div class="parallax">
+          <div class="parallax-text-wrapper parallax-internhacks center-align valign-wrapper">
+            <div class="parallax-text valign">            
               <h3>InternHacks</h3>
               <a href="http://internhacks.io/">internhacks.io</a>
               <h6>I founded an organzied a hackathon/networking event for Bay Area tech interns, called InternHacks. The theme of the event was portfolio website development, websites just like this! InternHacks was a great success, with over 250+ attendees.</h6>
-              <a class="waves-effect waves-light btn learn-more-btn">Learn More</a>
+              <a href="#internhacks" class="waves-effect waves-light btn learn-more-btn">Learn More</a>
             </div>       
           </div>
           <img id="internhacks-img" class="responsive-img" src="img/internhacks.jpeg">
         </div>
       </div> 
 
-      <div class="card white z-depth-4d hoverable">
+      <div id="experience" class="card white z-depth-4d hoverable">
         <h2>Experience</h2>
-        <ul class="experiencel">
+        <ul>
           <li>
             <div class="row">
               <div class="col s10 m8">
                 <h4>Engineering Practicum Intern</h4>
-                <h6>Summer 2015 <span>Mountain View, California</span></h6>
+                <h6>Summer 2015 <span class="location-span">Mountain View, California</span></h6>
                 <blockquote>
                   I worked on the web client for Inbox by Gmail, under the mentorship of two Google engineers.
 
@@ -125,11 +123,11 @@
               <div class="col s2 m4">Google</div><!-- replace w/ logo-->
             </div>
           </li>
-          <li>
+          <li id="internhacks">
             <div class="row">
               <div class="col s10 m8">
                 <h4>Founder & Head Organizer</h4>
-                <h6>Summer 2015 <span>San Francisco, California</span></h6>
+                <h6>Summer 2015 <span class="location-span">San Francisco, California</span></h6>
                 <blockquote>
                   
                   <ul class="experience experience-ul">
@@ -156,7 +154,7 @@
             <div class="row">
               <div class="col s10 m8">
                 <h4>Software Engineering Intern</h4>
-                <h6>Spring 2015 <span>Heidelberg, Germany</span></h6>
+                <h6>Spring 2015 <span class="location-span">Heidelberg, Germany</span></h6>
                 <blockquote>
                   I worked on a small team comprised of German and French engineers to develop a web apps for internal use. I often attended meetings and corresponded with coworkers in German.
                   <ul class="experience experience-ul">
@@ -205,7 +203,7 @@
             <div class="row">
               <div class="col s10 m8">
                 <h4>GoogleJump Participant</h4>
-                <h6>March - August 2014<span>Remote, New York City & Mountain View</span></h6>
+                <h6>March - August 2014<span class="location-span">Remote, New York City & Mountain View</span></h6>
                 <blockquote>
                   I developed an Android app, <a href="http://frij-app.appspot.com/">FRIJ</a> which reduces food wastage by OCRing images of receipts and notifies the user when items have spoiled. GoogleJump is a program sponsored by Google to help young students in Computer Science prepare for a potential internship at Google. 
                   <br>This was my first experience with Android development. I implented and designed the front end for the app, which is where I began to discover my interest in front end development and design.
@@ -225,7 +223,7 @@
             <div class="row">
               <div class="col s10 m8">
                 <h4>Software Engineering Intern</h4>
-                <h6>Summer 2014 <span>Ames, Iowa</span></h6>
+                <h6>Summer 2014 <span class="location-span">Ames, Iowa</span></h6>
                 <blockquote>
                   I worked on the Text & Tables team for WDesk. This was my very first software engineering internship, right after completing my first year as a computer science student.
                   <ul class="experience experience-ul">
@@ -253,11 +251,26 @@
         </ul>
       </div>
 
+      <div class="parallax-container">
+        <div class="parallax">
+          <div class="parallax-text-wrapper parallax-googlejump center-align valign-wrapper">
+            <div class="parallax-text valign">            
+              <h4>GoogleJump 2014 Winner</h4>
+              <h5>Best Overall - Engineers Choice</h5>
+              <a href="http://frij-app.appspot.com/">frij-app.appspot.com</a>
+              <h6>“For the best team project, as chosen by a panel of engineers at Google’s 2014 CS Summer Summit”</h6>
+              <a href="https://github.com/GoogleJump/returnJump" class="waves-effect waves-light btn learn-more-btn">View on Github</a>
+            </div>       
+          </div>
+          <img id="googlejump-img" class="responsive-img" src="img/googlejump-large.jpg">
+        </div>
+      </div> 
 
 
-      <div class="card white z-depth-4d hoverable">
+
+      <div id="education" class="card white z-depth-4d hoverable">
         <h2>Education</h2>
-        <ul class="experiencel">
+        <ul>
           <li>
             <div class="row">
               <div class="col s10 m8">

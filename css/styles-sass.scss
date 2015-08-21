@@ -22,6 +22,10 @@ i {
 	cursor: pointer;
 }
 
+span.location-span {
+	display: block;
+}
+
 ul.experience {
 	h5 {
 		margin-top: 1em;
@@ -48,8 +52,24 @@ ul.languages {
 	margin: 0 !important;
 }
 
-.internhacks-parallax-text-wrapper {
-	background-color: black;
+.learn-more-btn {
+	margin-top: 1em;
+}
+
+.name-card {
+	padding: 1em;
+}
+
+.navbar-fixed {
+	height: 0;
+}
+
+.parallax {
+    z-index: 0;
+}
+
+.parallax-text-wrapper {
+	background-color: $overlay-color;
 	color: white;
 	display: none; /* for fadeIn animation */
 	height: 100% !important;
@@ -59,30 +79,18 @@ ul.languages {
 	width: 100%;
 	z-index: 500;
 
-	.internhacks-parallax-text {
+	.parallax-text {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		opacity: 1;
-		text-shadow: -.2em -.2em .2em black;
+		text-shadow: -.2em -.2em .2em $text-color;
 		width: 70%;
 
 		.btn {
 			text-shadow: initial;
 		}
 	}
-}
-
-.learn-more-btn {
-	margin-top: 1em;
-}
-
-.navbar-fixed {
-	height: 0;
-}
-
-.parallax {
-    z-index: 0;
 }
 
 .subtitle {
@@ -143,7 +151,7 @@ ul.languages {
 }
 
 @media screen and (max-width: 720px){
-	.internhacks-parallax-text-wrapper {
+	.parallax-text-wrapper {
 		display: inline-block;
 		z-index: 0;
 	}
@@ -152,6 +160,10 @@ ul.languages {
 @media screen and (max-width: 600px){
 	.state-country-font {
 		font-size: 1em;
+	}
+
+	.parallax-googlejump {
+		padding-top: 0;
 	}
 
 	ul.experience-ul {

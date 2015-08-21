@@ -28,7 +28,19 @@ ul.languages li {
 .row {
   margin: 0 !important; }
 
-.internhacks-parallax-text-wrapper {
+.learn-more-btn {
+  margin-top: 1em; }
+
+.name-card {
+  padding: 1em; }
+
+.navbar-fixed {
+  height: 0; }
+
+.parallax {
+  z-index: 0; }
+
+.parallax-text-wrapper {
   background-color: black;
   color: white;
   display: none;
@@ -39,24 +51,15 @@ ul.languages li {
   position: absolute;
   width: 100%;
   z-index: 500; }
-  .internhacks-parallax-text-wrapper .internhacks-parallax-text {
+  .parallax-text-wrapper .parallax-text {
     display: block;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
-    text-shadow: -.2em -.2em .2em black;
+    text-shadow: -0.2em -0.2em 0.2em black;
     width: 70%; }
-    .internhacks-parallax-text-wrapper .internhacks-parallax-text .btn {
+    .parallax-text-wrapper .parallax-text .btn {
       text-shadow: initial; }
-
-.learn-more-btn {
-  margin-top: 1em; }
-
-.navbar-fixed {
-  height: 0; }
-
-.parallax {
-  z-index: 0; }
 
 .subtitle {
   display: block; }
@@ -102,12 +105,18 @@ ul.languages li {
   .state-country-font {
     font-size: 2em; } }
 @media screen and (max-width: 720px) {
-  .internhacks-parallax-text-wrapper {
+  .parallax-text-wrapper {
     display: inline-block;
     z-index: 0; } }
 @media screen and (max-width: 600px) {
   .state-country-font {
     font-size: 1em; }
+
+  span.location-span {
+    display: block; }
+
+  .parallax-googlejump {
+    padding-top: 0; }
 
   ul.experience-ul li {
     opacity: 1; } }

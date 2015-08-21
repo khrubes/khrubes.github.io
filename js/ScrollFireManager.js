@@ -22,14 +22,23 @@ function ScrollFireManager() {
 		this.options.push(option);
 	}
 
+	this.addParallaxScrollFireOptions = function() {
+		this.options.push({
+			selector: '.parallax-internhacks', 
+			offset: 200, 
+			callback: 'toggleHoverTextBySelector(".parallax-internhacks")'
+		});
+		this.options.push({
+			selector: '.parallax-googlejump', 
+			offset: 200, 
+			callback: 'toggleHoverTextBySelector(".parallax-googlejump")'
+		});
+	};
+
 
 	this.initScrollFire = function() {
 		this.renameULs();
-		this.options.push({
-			selector: '.parallax', 
-			offset: 200, 
-			callback: 'toggleInternHacksHoverText()'
-		});
+		this.addParallaxScrollFireOptions();
     	Materialize.scrollFire(this.options);
 	};
 

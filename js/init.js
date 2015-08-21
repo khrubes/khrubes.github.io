@@ -2,19 +2,9 @@
     return (window.innerWidth <= 720);
 };
 
-var toggleInternHacksHoverText = function() {
-    $(".internhacks-parallax-text-wrapper").fadeIn(2000);
+var toggleHoverTextBySelector = function(selector) {
+    $(selector).fadeIn(2000);
 };
-
-// var initScrollFire = function() {
-//     var options = [
-//         {selector: '.parallax', offset: 200, callback: 'toggleInternHacksHoverText()'},
-//         {selector: '.experience-ul', offset: 200, callback: 'Materialize.showStaggeredList(".experience-ul")'},
-//     ];
-//     Materialize.scrollFire(options);
-//     var scrollfireManager = new ScrollFireManager();
-//     scrollfireManager.renameULs();
-// };
 
 /** Once the DOM is ready. */
 $( document ).ready(function(){
@@ -36,4 +26,17 @@ $( window ).load(function() {
 });
 
 
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
 
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
