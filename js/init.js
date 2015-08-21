@@ -3,6 +3,7 @@
 };
 
 var toggleHoverTextBySelector = function(selector) {
+    debugger;
     $(selector).fadeIn(2000);
 };
 
@@ -35,7 +36,7 @@ $('a[href*=#]:not([href=#])').click(function() {
            if (target.length) {
              $('html,body').animate({
                  scrollTop: target.offset().top
-            }, 1000);
+            }, 900);
             return false;
         }
     }

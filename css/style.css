@@ -12,6 +12,9 @@ h2 {
 i {
   cursor: pointer; }
 
+span.location-span {
+  display: block; }
+
 ul.experience h5 {
   margin-top: 1em;
   margin-bottom: .5em; }
@@ -27,6 +30,9 @@ ul.languages li {
 .card,
 .row {
   margin: 0 !important; }
+
+.card h2 {
+  margin-top: 2%; }
 
 .learn-more-btn {
   margin-top: 1em; }
@@ -111,9 +117,6 @@ ul.languages li {
 @media screen and (max-width: 600px) {
   .state-country-font {
     font-size: 1em; }
-
-  span.location-span {
-    display: block; }
 
   .parallax-googlejump {
     padding-top: 0; }
