@@ -3,7 +3,6 @@
 };
 
 var toggleHoverTextBySelector = function(selector) {
-    debugger;
     $(selector).fadeIn(2000);
 };
 

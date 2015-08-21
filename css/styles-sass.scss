@@ -27,7 +27,7 @@ span.location-span {
 }
 
 ul.experience {
-	h5 {
+	h4 {
 		margin-top: 1em;
 		margin-bottom: .5em;
 	}
@@ -36,6 +36,7 @@ ul.experience {
 		opacity: 0;
 		b {
 			display: block;
+			line-height: 1.5em;
 		}
 	}
 }
@@ -45,6 +46,10 @@ ul.languages {
 		display: inline-block;
 		margin: .5em .5em .5em 0;
 	}
+}
+
+.btn {
+	font-size: initial;
 }
 
 .card,
@@ -74,10 +79,10 @@ ul.languages {
     z-index: 0;
 }
 
-.parallax-text-wrapper {
+.parallax-internhacks, .parallax-googlejump {
 	background-color: $overlay-color;
 	color: white;
-	display: none; /* for fadeIn animation */
+	display: none; /* for fadein animation */
 	height: 100% !important;
 	opacity: .8;
     padding-top: 10%;
@@ -170,12 +175,6 @@ ul.languages {
 
 	.parallax-googlejump {
 		padding-top: 0;
-	}
-
-	ul.experience-ul {
-		li {
-			opacity: 1;
-		}
 	}
 }
 

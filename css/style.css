@@ -15,17 +15,21 @@ i {
 span.location-span {
   display: block; }
 
-ul.experience h5 {
+ul.experience h4 {
   margin-top: 1em;
   margin-bottom: .5em; }
 ul.experience li {
   opacity: 0; }
   ul.experience li b {
-    display: block; }
+    display: block;
+    line-height: 1.5em; }
 
 ul.languages li {
   display: inline-block;
   margin: .5em .5em .5em 0; }
+
+.btn {
+  font-size: initial; }
 
 .card,
 .row {
@@ -46,25 +50,25 @@ ul.languages li {
 .parallax {
   z-index: 0; }
 
-.parallax-text-wrapper {
+.parallax-internhacks, .parallax-googlejump {
   background-color: black;
   color: white;
   display: none;
-  /* for fadeIn animation */
+  /* for fadein animation */
   height: 100% !important;
   opacity: .8;
   padding-top: 10%;
   position: absolute;
   width: 100%;
   z-index: 500; }
-  .parallax-text-wrapper .parallax-text {
+  .parallax-internhacks .parallax-text, .parallax-googlejump .parallax-text {
     display: block;
     margin-left: auto;
     margin-right: auto;
     opacity: 1;
     text-shadow: -0.2em -0.2em 0.2em black;
     width: 70%; }
-    .parallax-text-wrapper .parallax-text .btn {
+    .parallax-internhacks .parallax-text .btn, .parallax-googlejump .parallax-text .btn {
       text-shadow: initial; }
 
 .subtitle {
@@ -119,10 +123,7 @@ ul.languages li {
     font-size: 1em; }
 
   .parallax-googlejump {
-    padding-top: 0; }
-
-  ul.experience-ul li {
-    opacity: 1; } }
+    padding-top: 0; } }
 @font-face {
   font-family: geoBats;
   src: url(../fonts/geobats.ttf); }
