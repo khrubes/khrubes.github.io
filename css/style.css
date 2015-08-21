@@ -115,7 +115,7 @@ ul.languages li {
   .state-country-font {
     font-size: 2em; } }
 @media screen and (max-width: 720px) {
-  .parallax-text-wrapper {
+  .parallax-internhacks, .parallax-googlejump {
     display: inline-block;
     z-index: 0; } }
 @media screen and (max-width: 600px) {
