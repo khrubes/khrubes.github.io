@@ -15,14 +15,14 @@ i {
 span.location-span {
   display: block; }
 
-ul.experience h4 {
-  margin-top: 1em;
-  margin-bottom: .5em; }
 ul.experience li {
   opacity: 0; }
   ul.experience li b {
     display: block;
     line-height: 1.5em; }
+  ul.experience li h4 {
+    margin-top: 1em;
+    margin-bottom: .5em; }
 
 ul.languages li {
   display: inline-block;
@@ -72,7 +72,8 @@ ul.languages li {
       text-shadow: initial; }
 
 .subtitle {
-  display: block; }
+  display: block;
+  font-size: .7em; }
 
 .splash {
   background: url(../img/background-large.jpg);
