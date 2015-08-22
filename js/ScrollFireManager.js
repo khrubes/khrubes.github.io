@@ -24,12 +24,12 @@ function ScrollFireManager() {
 
 	this.addParallaxScrollFireOptions = function() {
 		this.options.push({
-			selector: '#lastButtonInWorkivaLangs', 
+			selector: '#education', 
 			offset: 0, 
 			callback: 'toggleHoverTextBySelector(".parallax-googlejump")'
 		});
 		this.options.push({
-			selector: '.parallax-internhacks', 
+			selector: '#experience', 
 			offset: 0, 
 			callback: 'toggleHoverTextBySelector(".parallax-internhacks")'
 		});

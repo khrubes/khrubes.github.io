@@ -122,7 +122,7 @@ ul.languages li {
   .state-country-font {
     font-size: 1em; }
 
-  .parallax-googlejump {
+  .parallax-internhacks, .parallax-googlejump {
     padding-top: 0; } }
 @font-face {
   font-family: geoBats;
