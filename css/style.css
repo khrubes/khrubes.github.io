@@ -3,6 +3,9 @@ body {
   height: 100%;
   margin: 0 !important; }
 
+footer.page-footer {
+  margin-top: 0; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
@@ -27,6 +30,15 @@ ul.experience li {
 ul.languages li {
   display: inline-block;
   margin: .5em .5em .5em 0; }
+ul.languages li.languages-and-tools {
+  display: block; }
+
+ul.footer-links-ul li {
+  display: inline-block; }
+  ul.footer-links-ul li i {
+    color: white;
+    font-size: 3em;
+    padding: 0 1em 0 1em; }
 
 .btn {
   font-size: initial; }
@@ -37,6 +49,9 @@ ul.languages li {
 
 .card h2 {
   margin-top: 2%; }
+
+.email {
+  color: white; }
 
 .learn-more-btn {
   margin-top: 1em; }

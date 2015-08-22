@@ -9,6 +9,10 @@ body {
 	margin: 0 !important;
 }
 
+footer.page-footer {
+	margin-top: 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
@@ -45,6 +49,22 @@ ul.languages {
 		display: inline-block;
 		margin: .5em .5em .5em 0;
 	}
+
+	li.languages-and-tools {
+		display: block;
+	}
+
+}
+
+ul.footer-links-ul {
+	li {
+		display: inline-block;
+		i {
+			color: white;
+			font-size: 3em;
+			padding: 0 1em 0 1em;
+		}
+	}
 }
 
 .btn {
@@ -60,6 +80,10 @@ ul.languages {
 	h2 {
 		margin-top: 2%;
 	}
+}
+
+.email {
+	color: white;
 }
 
 .learn-more-btn {
