@@ -40,6 +40,9 @@ ul.footer-links-ul li {
     font-size: 3em;
     padding: 0 1em 0 1em; }
 
+.brand-logo {
+  padding: 0 15px; }
+
 .btn {
   font-size: initial; }
 
@@ -57,7 +60,12 @@ ul.footer-links-ul li {
   margin-top: 1em; }
 
 .name-card {
-  padding: 1em; }
+  background-color: rgba(0, 150, 136, 0.4) !important;
+  margin-top: calc(66%) !important;
+  padding: 1em;
+  position: absolute;
+  text-shadow: 2px 2px 2px black;
+  width: 100%; }
 
 .navbar-fixed {
   height: 0; }
@@ -108,7 +116,9 @@ ul.footer-links-ul li {
   background-repeat: no-repeat;
   color: white;
   height: 100vh;
-  background-position: right top !important; }
+  background-position: right top !important;
+  background-color: rgba(0, 0, 0, 0.54) !important;
+  background-blend-mode: luminosity !important; }
   @media screen and (min-width: 641px) {
     .splash {
       background: url(../img/bg-large.jpg); } }
@@ -118,10 +128,6 @@ ul.footer-links-ul li {
   @media screen and (max-width: 399px) {
     .splash {
       background: url(../img/bg-small.jpg); } }
-  .splash .splash-text {
-    text-shadow: .2em .3em 1em black;
-    display: none;
-    /* for fadeIn animation */ }
 
 .state-country-font {
   background: -webkit-linear-gradient(#eee, #333);

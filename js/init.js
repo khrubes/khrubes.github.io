@@ -24,7 +24,6 @@ $( document ).ready(function(){
 
 /** Once everything, including images, is ready */
 $( window ).load(function() {
-    $(".splash-text").fadeIn(1500);
     var scrollfireManager = new ScrollFireManager();
     scrollfireManager.initScrollFire();
 });

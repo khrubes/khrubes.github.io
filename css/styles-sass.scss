@@ -1,5 +1,6 @@
 $primary-color: #BF1D52 !important;
 $primary-color-light: #DA044C !important;
+$teal-opacity-card-bg: rgba(0, 150, 136, .4) !important;
 $overlay-color: black;
 $text-color: black;
 
@@ -67,6 +68,10 @@ ul.footer-links-ul {
 	}
 }
 
+.brand-logo {
+	padding: 0 15px;
+}
+
 .btn {
 	font-size: initial;
 }
@@ -91,7 +96,12 @@ ul.footer-links-ul {
 }
 
 .name-card {
+	background-color: $teal-opacity-card-bg;
+    margin-top: calc(66%)!important;
 	padding: 1em;
+	position: absolute;
+	text-shadow: 2px 2px 2px black;
+	width: 100%;
 }
 
 .navbar-fixed {
@@ -166,10 +176,9 @@ ul.footer-links-ul {
 	height: 100vh;
 
 	background-position: right top !important;
-	.splash-text {
-		text-shadow: .2em .3em 1em black;
-		display: none; /* for fadeIn animation */
-	}
+
+	background-color: rgba(0, 0, 0, 0.54) !important;
+	background-blend-mode: luminosity !important;
 }
 
 .state-country-font {
