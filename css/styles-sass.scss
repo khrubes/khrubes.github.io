@@ -69,7 +69,7 @@ ul.footer-links-ul {
 }
 
 .brand-logo {
-	padding: 0 15px;
+	padding: 0 15px !important;
 }
 
 .btn {
@@ -97,6 +97,7 @@ ul.footer-links-ul {
 
 .name-card {
 	background-color: $teal-opacity-card-bg;
+	display: none; /* for fadein animation */
 	padding: 1em;
 	position: absolute;
 	text-shadow: 2px 2px 2px black;
@@ -182,6 +183,10 @@ ul.footer-links-ul {
 
 	background-color: rgba(0, 0, 0, 0.54) !important;
 	background-blend-mode: luminosity !important;
+
+	.splash-name {
+		padding-bottom: .25em;
+	}
 }
 
 .state-country-font {
