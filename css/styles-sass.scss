@@ -127,15 +127,30 @@ ul.footer-links-ul {
 	}
 }
 
+/*.preloader {
+	height: 100%;
+	width: auto;
+	background-color: gray;
+}*/
+
 .subtitle {
 	display: block;
 	font-size: .7em;
 }
 
 .splash {
-	background: url(../img/background-large.jpg);
+
+	@media screen and (min-width: 641px){
+		background: url(../img/bg-large.jpg);
+	}
+	@media screen and (max-width: 640px) and (min-width: 400px){
+		background: url(../img/bg-medium.jpg);
+	}
+	@media screen and (max-width: 399px){
+		background: url(../img/bg-small.jpg);
+	}
+
 	background-repeat: no-repeat !important;
-	background-position: center top;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
 	-o-background-size: 100%;
@@ -144,11 +159,13 @@ ul.footer-links-ul {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover !important;
 
 	background-repeat: no-repeat;
 	color: white;
 	height: 100vh;
+
+	background-position: right top !important;
 	.splash-text {
 		text-shadow: .2em .3em 1em black;
 		display: none; /* for fadeIn animation */

@@ -8,7 +8,10 @@ var toggleHoverTextBySelector = function(selector) {
 
 /** Once the DOM is ready. */
 $( document ).ready(function(){
-    $(".button-collapse").sideNav();
+    $('.button-collapse').sideNav({
+      closeOnClick: true 
+    });
+
     if (!isMobile()) {
         $('.parallax').parallax();
     } else {
@@ -18,12 +21,14 @@ $( document ).ready(function(){
 });
 
 
+
 /** Once everything, including images, is ready */
 $( window ).load(function() {
     $(".splash-text").fadeIn(1500);
     var scrollfireManager = new ScrollFireManager();
     scrollfireManager.initScrollFire();
 });
+
 
 
 $('a[href*=#]:not([href=#])').click(function() {
