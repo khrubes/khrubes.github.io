@@ -97,10 +97,13 @@ ul.footer-links-ul {
 
 .name-card {
 	background-color: $teal-opacity-card-bg;
-    margin-top: calc(66%)!important;
 	padding: 1em;
 	position: absolute;
 	text-shadow: 2px 2px 2px black;
+	transform: translateY(300%);
+	@media screen and (max-width: 399px){
+		transform: translateY(100%);
+	}
 	width: 100%;
 }
 

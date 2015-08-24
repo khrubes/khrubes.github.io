@@ -61,11 +61,14 @@ ul.footer-links-ul li {
 
 .name-card {
   background-color: rgba(0, 150, 136, 0.4) !important;
-  margin-top: calc(66%) !important;
   padding: 1em;
   position: absolute;
   text-shadow: 2px 2px 2px black;
+  transform: translateY(300%);
   width: 100%; }
+  @media screen and (max-width: 399px) {
+    .name-card {
+      transform: translateY(100%); } }
 
 .navbar-fixed {
   height: 0; }
