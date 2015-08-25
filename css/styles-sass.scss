@@ -98,8 +98,11 @@ ul.footer-links-ul {
 .name-card {
 	background-color: $teal-opacity-card-bg;
 	display: none; /* for fadein animation */
+	line-height: 3em;
 	padding: 1em;
 	position: absolute;
+	-webkit-text-shadow: $overlay-text-shadow;
+	-moz-text-shadow: $overlay-text-shadow;
 	text-shadow: $overlay-text-shadow;
 	-webkit-transform: translateY(250%);
 	@media screen and (max-width: 399px){
