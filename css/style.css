@@ -64,7 +64,7 @@ ul.footer-links-ul li {
   display: none;
   /* for fadein animation */
   padding: 1em;
-  position: absolute;
+  position: fixed;
   text-shadow: 2px 2px 2px black;
   transform: translateY(300%);
   width: 100%; }
