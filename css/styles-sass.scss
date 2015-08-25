@@ -99,7 +99,7 @@ ul.footer-links-ul {
 	background-color: $teal-opacity-card-bg;
 	display: none; /* for fadein animation */
 	padding: 1em;
-	position: fixed;
+	position: absolute;
 	text-shadow: $overlay-text-shadow;
 	transform: translateY(300%);
 	@media screen and (max-width: 399px){
