@@ -101,7 +101,7 @@ ul.footer-links-ul {
 	padding: 1em;
 	position: absolute;
 	text-shadow: $overlay-text-shadow;
-	transform: translateY(300%);
+	-webkit-transform: translateY(300%);
 	@media screen and (max-width: 399px){
 		transform: translateY(100%);
 	}

@@ -66,7 +66,7 @@ ul.footer-links-ul li {
   padding: 1em;
   position: absolute;
   text-shadow: 2px 2px 2px black;
-  transform: translateY(300%);
+  -webkit-transform: translateY(300%);
   width: 100%; }
   @media screen and (max-width: 399px) {
     .name-card {
