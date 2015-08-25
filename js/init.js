@@ -14,10 +14,7 @@ $( document ).ready(function(){
 
     if (!isMobile()) {
         $('.parallax').parallax();
-    } else {
-        $('.parallax-container').removeClass('parallax-container');
-        $('.parallax').removeClass('parallax');
-    }
+    } 
 });
 
 
@@ -29,6 +26,13 @@ $( window ).load(function() {
     scrollfireManager.initScrollFire();
 });
 
+
+$(window).resize(function() {   
+    if (window.lastWidth <= 720 && window.innerWidth > 720) {
+        $('.parallax').parallax();
+    }
+    window.lastWidth = window.innerWidth;
+});
 
 
 $('a[href*=#]:not([href=#])').click(function() {

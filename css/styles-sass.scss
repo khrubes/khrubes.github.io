@@ -1,8 +1,8 @@
 $primary-color: #BF1D52 !important;
 $primary-color-light: #DA044C !important;
 $teal-opacity-card-bg: rgba(0, 150, 136, .4) !important;
-$overlay-color: black;
 $text-color: black;
+$overlay-text-shadow: 2px 2px 2px black;
 
 body {	
 	color: $text-color;
@@ -100,7 +100,7 @@ ul.footer-links-ul {
 	display: none; /* for fadein animation */
 	padding: 1em;
 	position: absolute;
-	text-shadow: 2px 2px 2px black;
+	text-shadow: $overlay-text-shadow;
 	transform: translateY(300%);
 	@media screen and (max-width: 399px){
 		transform: translateY(100%);
@@ -112,16 +112,22 @@ ul.footer-links-ul {
 	height: 0;
 }
 
+
+.parallax-container {
+	@media screen and (max-width: 720px){
+		display: none;
+	}
+}
+
 .parallax {
     z-index: 0;
 }
 
 .parallax-internhacks, .parallax-googlejump {
-	background-color: $overlay-color;
+	background-color: $teal-opacity-card-bg;
 	color: white;
 	display: none; /* for fadein animation */
 	height: 100% !important;
-	opacity: .8;
     padding-top: 10%;
 	position: absolute;
 	width: 100%;
@@ -132,11 +138,70 @@ ul.footer-links-ul {
 		margin-left: auto;
 		margin-right: auto;
 		opacity: 1;
-		text-shadow: -.2em -.2em .2em $text-color;
+		text-shadow: $overlay-text-shadow;
 		width: 70%;
 
 		.btn {
 			text-shadow: initial;
+		}
+	}
+}
+
+	.googlejump-replace {
+		@media screen and (min-width: 641px){
+			background: url(../img/googlejump-large.jpeg);
+		}
+		@media screen and (max-width: 640px) and (min-width: 400px){
+			background: url(../img/googlejump-medium.jpeg);
+		}
+		@media screen and (max-width: 399px){
+			background: url(../img/googlejump-small.jpeg);
+		}
+	}
+
+	.internhacks-replace {
+		@media screen and (min-width: 641px){
+			background: url(../img/internhacks-large.jpeg);
+		}
+		@media screen and (max-width: 640px) and (min-width: 400px){
+			background: url(../img/internhacks-medium.jpeg);
+		}
+		@media screen and (max-width: 399px){
+			background: url(../img/internhacks-small.jpeg);
+		}
+	}
+
+.parallax-replace-on-small {
+
+	@media screen and (min-width: 720px){
+		display: none;
+	}
+
+	background-repeat: no-repeat !important;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+
+	background-repeat: no-repeat;
+
+	.parallax-replace-on-small-card {
+		background-color: $teal-opacity-card-bg;
+
+		.parallax-replace-on-small-text{
+			color: white;
+			padding-top: 20%;
+	    	padding-bottom: 20%;
+	    	text-shadow: 2px 2px 2px black;
+
+	    	.btn {
+				text-shadow: initial;
+			}
 		}
 	}
 }
