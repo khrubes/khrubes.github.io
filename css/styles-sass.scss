@@ -103,7 +103,7 @@ ul.footer-links-ul {
 	text-shadow: $overlay-text-shadow;
 	-webkit-transform: translateY(250%);
 	@media screen and (max-width: 399px){
-		transform: translateY(100%);
+		-webkit-transform: translateY(100%);
 	}
 	width: 100%;
 }
@@ -242,10 +242,6 @@ ul.footer-links-ul {
 
 	background-color: rgba(0, 0, 0, 0.54) !important;
 	background-blend-mode: luminosity !important;
-
-	.splash-name {
-		padding-bottom: .25em;
-	}
 }
 
 .state-country-font {
