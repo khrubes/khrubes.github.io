@@ -86,7 +86,7 @@ ul.footer-links-ul li {
   z-index: 0; }
 
 .parallax-internhacks, .parallax-googlejump {
-  background-color: rgba(0, 150, 136, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
   color: white;
   display: none;
   /* for fadein animation */
@@ -140,7 +140,7 @@ ul.footer-links-ul li {
     .parallax-replace-on-small {
       display: none; } }
   .parallax-replace-on-small .parallax-replace-on-small-card {
-    background-color: rgba(0, 150, 136, 0.4) !important; }
+    background-color: rgba(0, 0, 0, 0.4) !important; }
     .parallax-replace-on-small .parallax-replace-on-small-card .parallax-replace-on-small-text {
       color: white;
       padding-top: 20%;

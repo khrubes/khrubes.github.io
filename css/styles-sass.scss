@@ -1,5 +1,6 @@
 $primary-color: #BF1D52 !important;
 $primary-color-light: #DA044C !important;
+$black-opacity-card-bg: rgba(0, 0, 0, .4) !important;
 $teal-opacity-card-bg: rgba(0, 150, 136, .4) !important;
 $text-color: black;
 $overlay-text-shadow: 2px 2px 2px black;
@@ -127,7 +128,7 @@ ul.footer-links-ul {
 }
 
 .parallax-internhacks, .parallax-googlejump {
-	background-color: $teal-opacity-card-bg;
+	background-color: $black-opacity-card-bg;
 	color: white;
 	display: none; /* for fadein animation */
 	height: 100% !important;
@@ -194,7 +195,7 @@ ul.footer-links-ul {
 	background-repeat: no-repeat;
 
 	.parallax-replace-on-small-card {
-		background-color: $teal-opacity-card-bg;
+		background-color: $black-opacity-card-bg;
 
 		.parallax-replace-on-small-text{
 			color: white;
