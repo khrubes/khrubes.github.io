@@ -18,7 +18,6 @@ $( document ).ready(function(){
 });
 
 
-
 /** Once everything, including images, is ready */
 $( window ).load(function() {
     $('.name-card').fadeIn(2000);
