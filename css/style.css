@@ -3,6 +3,12 @@ body {
   height: 100%;
   margin: 0 !important; }
 
+blockquote {
+  border-left-color: black; }
+
+footer {
+  background-color: #26a69a !important; }
+
 footer.page-footer {
   margin-top: 0; }
 
@@ -14,6 +20,9 @@ h2 {
 
 i {
   cursor: pointer; }
+
+nav {
+  background-color: black; }
 
 span.location-span {
   display: block; }
