@@ -93,6 +93,8 @@ ul.footer-links-ul li {
 
 .parallax {
   z-index: 0; }
+  .parallax .parallax-link {
+    color: darkgray; }
 
 .parallax-internhacks, .parallax-googlejump {
   background-color: rgba(0, 0, 0, 0.4) !important;

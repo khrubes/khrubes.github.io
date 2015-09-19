@@ -137,6 +137,10 @@ ul.footer-links-ul {
 
 .parallax {
     z-index: 0;
+
+    .parallax-link {
+    	color: darkgray;
+    }
 }
 
 .parallax-internhacks, .parallax-googlejump {

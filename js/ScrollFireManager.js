@@ -17,7 +17,7 @@ function ScrollFireManager() {
 		console.log();
 		var option = {
 			selector: selector,
-			offset: 300,
+			offset: 200,
 			callback: 'Materialize.showStaggeredList("' + selector + '")'
 		};
 		this.options.push(option);
