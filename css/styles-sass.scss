@@ -5,6 +5,14 @@ $teal-opacity-card-bg: rgba(0, 150, 136, .4) !important;
 $text-color: black;
 $overlay-text-shadow: 2px 2px 2px black;
 
+#google-row {
+	margin-top: 5% !important;
+}
+
+#microsoft-logo {
+	max-height: 150px;
+}
+
 body {	
 	color: $text-color;
 	height: 100%;
