@@ -4,10 +4,6 @@
 	display: none !important;
 }
 
-.mt-15-mobile {
-  margin-top: 15%!important; /*such a hack I know TODO fix*/
-}
-
  .card {
  	margin-left: 5% !important;
  }
@@ -15,7 +11,7 @@
  .card-content {
  	font-size: 5vw !important;
     line-height: 2em;
-
+    top: 33% !important;
  }
 
 #about-me-content {
@@ -74,7 +70,6 @@ section .title #name {
   height: auto !important;
   margin-bottom: 10%;
   transform: translateY(-75%);
-   width: 100% !important;
 }
 
 
